@@ -113,8 +113,12 @@ Since this library is not currently published on hex, you need to build the docu
 
 ## Alternatives
 
-A couple of libraries with similar features are available:
+There are a couple of other libraries available with similar features:
 
-- [Vapor](https://github.com/keathley/vapor)
 - [Skogsrå](https://github.com/gmtprime/skogsra)
 - [Specify](https://github.com/Qqwy/elixir-specify)
+- [Vapor](https://github.com/keathley/vapor)
+
+## License
+
+[MIT](LICENSE)
