@@ -5,10 +5,12 @@ defmodule Provider.MixProject do
     [
       app: :provider,
       version: "0.1.0",
-      elixir: "~> 1.9",
+      elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      aliases: aliases()
+      aliases: aliases(),
+      compilers: extra_compilers() ++ Mix.compilers(),
+      boundary: [externals_mode: :strict]
     ]
   end
 
@@ -20,6 +22,7 @@ defmodule Provider.MixProject do
 
   defp deps do
     [
+      {:boundary, "~> 0.4", runtime: false},
       {:credo, "~> 1.2", only: [:dev, :test]},
       {:ecto, "~> 3.0"},
       {:ex_doc, "~> 0.21", only: :dev},
@@ -32,4 +35,6 @@ defmodule Provider.MixProject do
       credo: ~w/compile credo/
     ]
   end
+
+  defp extra_compilers(), do: if(Mix.env() == :prod, do: [], else: [:boundary])
 end

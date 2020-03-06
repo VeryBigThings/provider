@@ -90,6 +90,10 @@ defmodule Provider do
   these functions.
   """
 
+  use Boundary,
+    exports: [Source, SystemEnv],
+    deps: [Ecto.Changeset, Mix]
+
   alias Ecto.Changeset
 
   @type source :: module

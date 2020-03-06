@@ -1,4 +1,5 @@
 %{
+  "boundary": {:hex, :boundary, "0.4.1", "30c4f97a7d93a7e0dba6a52bfdf803df1167018d3152dd23d6193d3e9197051d", [:mix], [], "hexpm", "01ae61bee4ad1c1a92cf1e7504a4f307ad72174e98b53d98efa8cb88e8f74e8e"},
   "bunt": {:hex, :bunt, "0.2.0", "951c6e801e8b1d2cbe58ebbd3e616a869061ddadcc4863d0a2182541acae9a38", [:mix], [], "hexpm", "7af5c7e09fe1d40f76c8e4f9dd2be7cebd83909f31fee7cd0e9eadc567da8353"},
   "credo": {:hex, :credo, "1.2.3", "fbd11a840e45dc42e650401e16acd2a39dde080240b974e146cc65e81ada1cd3", [:mix], [{:bunt, "~> 0.2.0", [hex: :bunt, repo: "hexpm", optional: false]}, {:jason, "~> 1.0", [hex: :jason, repo: "hexpm", optional: false]}], "hexpm", "3c07d51ff43748bb959752ede70e40557cdcb7d61615e47ae1e9e108e0b1ceec"},
   "decimal": {:hex, :decimal, "1.8.1", "a4ef3f5f3428bdbc0d35374029ffcf4ede8533536fa79896dd450168d9acdf3c", [:mix], [], "hexpm", "3cb154b00225ac687f6cbd4acc4b7960027c757a5152b369923ead9ddbca7aec"},
