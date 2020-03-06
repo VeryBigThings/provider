@@ -92,7 +92,7 @@ defmodule Provider do
 
   use Boundary,
     exports: [Source, SystemEnv],
-    deps: [Ecto.Changeset, Mix]
+    deps: [Ecto.Changeset, {Mix, :compile}]
 
   alias Ecto.Changeset
 
