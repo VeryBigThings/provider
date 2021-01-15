@@ -204,13 +204,13 @@ defmodule ProviderTest do
                OPT_2=
 
                # string
-               # OPT_3=foo
+               # OPT_3="foo"
 
                # string
-               # OPT_4=bar
+               # OPT_4="bar"
 
                # string
-               # OPT_5=baz
+               # OPT_5="baz"
 
                # boolean
                OPT_6=

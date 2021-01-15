@@ -29,7 +29,7 @@ defmodule Provider.SystemEnv do
   defp param_entry({name, spec}) do
     """
     # #{spec.type}
-    # #{display_name(name)}=#{spec.default}
+    # #{display_name(name)}="#{String.replace(to_string(spec.default), "\n", "\\n")}"
     """
   end
 end
