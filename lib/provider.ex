@@ -212,7 +212,7 @@ defmodule Provider do
 
       @doc "Validates all parameters, raising if some values are missing or invalid."
       @spec validate!() :: :ok
-      def validate!() do
+      def validate! do
         with {:error, errors} <- fetch_all() do
           raise "Following OS env var errors were found:\n#{Enum.join(Enum.sort(errors), "\n")}"
         end
