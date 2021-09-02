@@ -22,11 +22,11 @@ defmodule Provider.MixProject do
 
   defp deps do
     [
-      {:boundary, "~> 0.4", runtime: false},
-      {:credo, "~> 1.2", only: [:dev, :test]},
-      {:ecto, "~> 3.0"},
-      {:ex_doc, "~> 0.21", only: :dev},
-      {:dialyxir, "~> 0.5", only: [:dev, :test]}
+      {:boundary, "~> 0.8", runtime: false},
+      {:credo, "~> 1.5", only: [:dev, :test]},
+      {:ecto, "~> 3.7"},
+      {:ex_doc, "~> 0.25.1", only: :dev},
+      {:dialyxir, "~> 1.1", only: [:dev, :test]}
     ]
   end
 
